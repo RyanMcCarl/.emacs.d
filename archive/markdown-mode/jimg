@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jimg (jekyll-img)
+# key: jimg
+# binding: C-c r j
+# --
+{% include image.html name="$1.jpg" alt="$2" caption="$3" %}
+
+$0

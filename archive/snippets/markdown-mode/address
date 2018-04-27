@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: address
+# key: adr
+# binding: C-c C-r a
+# --
+Ryan McCarl
+1630 N. Clarkson St. #322
+Denver, CO 80218
+(231) 638-1201
+ryan.mccarl@gmail.com
+
+$0

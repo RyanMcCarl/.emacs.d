@@ -1,0 +1,9 @@
+[submodule "wikipedia-this"]
+	path = wikipedia-this
+	url = ./wikipedia-this
+[submodule "amazon-this"]
+	path = amazon-this
+	url = ./amazon-this
+[submodule "emacs"]
+	path = emacs
+	url = ./purcell-emacs

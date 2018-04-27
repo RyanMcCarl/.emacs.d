@@ -1,0 +1,6 @@
+# name: utf-8 encoding
+# key: utf8
+# contributor: Thiago Perrotta
+# --
+<meta charset="utf-8">
+$0

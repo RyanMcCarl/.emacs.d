@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Blog post sentence entry
+# key: bse
+# binding: C-c r s
+# --
+## ${1:number}. ${2:`yas-selected-text`}
+I
+<audio controls><source src="https://api.wordbrewery.com/tts/speak?code={{ site.code }}&languageId=${3:Spanish|Japanese|German}&text=$2"></source></audio>
+
+$0

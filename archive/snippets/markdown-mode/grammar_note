@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: grammar_note
+# key: g
+# --
+
+
+*Grammar note*: ${1:In this sentence, *avoir* is in the imperfect tense, but *dire* is in the simple past (*passé simple*) tense. When these two forms are combined, the resulting compound verb—*j'avais dit* (lit. "I had told you")—is in the *plus-que-parfait* (more-than-perfect) tense.}
+
+$0

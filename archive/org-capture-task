@@ -1,0 +1,8 @@
+* %{NEXT|TODO|SOMEDAY|WAITING|NOT DOING} %(org-priority) %{%i|%L|%c|%C}
+
+(org-set-property CREATED %u)
+(org-set-tags)
+(org-set-effort)
+(org-schedule)
+(org-set-deadline)
+%?

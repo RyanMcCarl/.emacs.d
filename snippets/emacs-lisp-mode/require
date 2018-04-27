@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: require
+# key: r
+# binding: C-c r r
+# --
+(require '$1)
+$0

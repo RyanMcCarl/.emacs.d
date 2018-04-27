@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: img
+# key: img
+# binding: C-c r i
+# --
+![${1:Alt Text}]({{ site.baseurl }}/img/${2:URL}$3) $0
+

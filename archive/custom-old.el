@@ -1,0 +1,21 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-bright)))
+ '(custom-safe-themes
+   (quote
+    ("1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" default)))
+ '(org-trello-current-prefix-keybinding "C-c o")
+ '(package-selected-packages
+   (quote
+    (org-webpage org-wc org-trello org-sync-snippets org-static-blog org-review org-ref org-redmine org-random-todo org-publish-agenda org-projectile org-preview-html org-pdfview org-password-manager org-parser org-page org-notebook org-journal org-jira org-gcal org-edit-latex org-easy-img-insert org-dropbox org-drill-table org-download org-doing org-dashboard org-brain org-bookmark-heading org-board org-babel-eval-in-repl org-autolist org-alert org-ac omni-scratch ob-typescript ob-translate ob-mongo ob-http ob-browser ob-async nodejs-repl ng2-mode mozc move-text mmm-jinja2 math-symbol-lists markdownfmt markdown-toc markdown-preview-mode markdown-mode+ lentic latex-preview-pane kroman kpm-list julia-mode jinja2-mode jedi java-snippets ivy-youtube ivy-todo ivy-hydra ivy-dired-history ivy-bibtex init-open-recentf inf-mongo ido-ubiquitous idle-highlight-mode ibuffer-projectile hydra hugo html2org html-to-markdown html-check-frag how-many-lines-in-project historyf history helm-emmet helm google-translate google-this go-snippets go-playground go-complete go-autocomplete font-utils flymake-python-pyflakes flymake-json flymake-jslint flymake-go flymake-csslint flymake-css flylisp flycheck-pyflakes evernote-mode eval-in-repl emmet-mode elpy elmacro elisp-lint elisp-format elisp-depend elfeed-web elfeed-org elfeed-goodies elfeed ego ctable creole cparen concurrent company-auctex blog-minimal biblio better-shell better-defaults bbdb-vcard bbdb-csv-import bbdb bash-completion avandu autobookmarks auto-virtualenv auto-org-md auto-complete auctex-latexmk achievements ace-window ace-pinyin ace-jump-mode ace-isearch ac-ja ac-html-bootstrap regex-tool osx-location dsvn htmlize lua-mode gnuplot flycheck-ledger ledger-mode origami flycheck-clojure cider elein cljsbuild-mode clojure-mode slime-company hippie-expand-slime slime cask-mode flycheck-package highlight-quoted macrostep cl-lib-highlight aggressive-indent immortal-scratch auto-compile ipretty elisp-slime-nav paredit-everywhere paredit terraform-mode docker-compose-mode dockerfile-mode docker yaml-mode toml-mode racer rust-mode sql-indent projectile-rails yard-mode bundler goto-gem yari robe ruby-compilation inf-ruby rspec-mode ruby-hash-syntax flycheck-elm elm-mode hindent intero haskell-mode company-anaconda anaconda-mode pip-requirements restclient httprepl css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode tagedit tidy org-pomodoro writeroom-mode org-cliplink grab-mac-link org-fstree smarty-mode php-mode add-node-modules-path skewer-mode js-comint xref-js2 prettier-js typescript-mode coffee-mode js2-mode json-mode erlang csv-nav csv-mode markdown-mode textile-mode cmd-to-echo alert magit-gh-pulls github-issues github-clone bug-reference-github yagist git-messenger magit git-timemachine gitconfig-mode gitignore-mode git-blamed vc-darcs darcsum browse-at-remote whitespace-cleanup-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring symbol-overlay undo-tree rainbow-delimiters beacon list-unicode-display unfill mmm-mode default-text-scale switch-window company-quickhelp company projectile counsel ivy-historian ivy smex flycheck-color-mode-line flycheck ibuffer-vc wgrep-ag ag anzu diff-hl diredfl dired-sort disable-mouse color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized command-log-mode scratch diminish project-local-variables wgrep exec-path-from-shell fullframe))))
+
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

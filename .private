@@ -1,0 +1,5 @@
+-*- mode: emacs-lisp; -*-
+
+(setq paradox-github-token "62dc3b38b6b98a410c046e1da9bae993b1473e36")
+
+(provide 'private)

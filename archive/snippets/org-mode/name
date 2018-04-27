@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: name
+# key: n
+# binding: C-c r n
+# --
+#+NAME: $0

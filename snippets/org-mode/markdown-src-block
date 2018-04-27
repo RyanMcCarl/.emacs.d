@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: markdown-src-blcok
+# key: m
+# binding: C-c C-r m
+# --
+
+#+BEGIN_SRC markdown
+${1:WordBrewery teaches one sentence at a time, so you can make progress and review vocabulary and grammar even if you only have a short time to study. Its course lessons can be completed in about five minutes each.}
+#+END_SRC
+
+$0

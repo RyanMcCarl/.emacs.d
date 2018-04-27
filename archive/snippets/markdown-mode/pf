@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: post-footer
+# key: pf
+# --
+{% include post_footer.html %}
+$0

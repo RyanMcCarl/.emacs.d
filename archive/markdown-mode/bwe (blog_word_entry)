@@ -1,0 +1,11 @@
+hi# -*- mode: snippet -*-
+# name: blog_word_entry
+# key: bwe
+# binding: C-c r w
+# --
+
+**${1:`yas-selected-text`}** | $2
+
+<audio controls align="center"><source src="https://api.wordbrewery.com/tts/speak?code={{ site.code }}&languageId=$3&text=$1"></source></audio>
+
+$0

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: src-blcok
+# key: s
+# --
+
+#+BEGIN_SRC ${1:js|markdown|python|shell} $2
+${3:WordBrewery teaches one sentence at a time, so you can make progress and review vocabulary and grammar even if you only have a short time to study. Its course lessons can be completed in about five minutes each.}
+#+END_SRC
+
+$0

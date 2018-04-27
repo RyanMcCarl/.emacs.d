@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: target-blank
+# key: t
+# binding: C-c r t
+# --
+{:target="_blank"} $0

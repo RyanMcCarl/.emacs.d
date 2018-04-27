@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: post-header
+# key: ph
+# --
+{% include post_header.html %}
+
+$0

@@ -26,14 +26,15 @@
 ;; Load private variables and authentication tokens
 (ignore-errors
   (load-file '"~/Dropbox/.emacs.d/.private.el")
-  (require 'private))
+  (require 'color-identifiers-mode)
+  (require 'ob-async))
 
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/package-list.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/requires.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/requires2.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-macros.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el"))
-(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/custom-settings.el"))
+                                        ;(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/custom-settings.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-misc.el"))
 
@@ -64,30 +65,7 @@
 (require 'init-functions)
 (require 'init-macros)
 
-;; Org-mode
-
-(setq org-descriptive-links t)
-
-(setq org-todo-keywords
-      '(
-        (sequence "NEXT(n)" "TODO(t)" "RECURRING(r)" "WAITING(w)" "|" "DONE(d!/!)")
-        (sequence "PROJECT(p)" "|" "DONE(d!/!)" "NOT DOING(c@/!)")))
-
-(setq org-todo-repeat-to-state "NEXT")
-
 ;; YASnippet
-(yas-global-mode 1)
-
-;; Python
-
-(add-hook 'python-mode-hook 'auto-virtualenv-set-virtualenv)
-(add-hook 'window-configuration-change-hook 'auto-virtualenv-set-virtualenv)
-(add-hook 'focus-in-hook 'auto-virtualenv-set-virtualenv)
-
-;; Org-reveal
-
-;(add-to-list 'org-reveal-external-plugins '("slideshow-recorder" . "{ src: '%splugin/audio-slideshow/slideshow-recorder.js', async:true, condition: jscallbackfunction(){} }" ))
-;(add-to-list 'org-reveal-external-plugins '("audio-slideshow" . "{ src: '%splugin/audio-slideshow/audio-slideshow.js', async:true, condition: jscallbackfunction(){} }" ))
 
 ;; Autosave/backup
 
@@ -272,7 +250,15 @@
 ;(setq TeX-PDF-mode t)
 (setq LaTeX-item-indent 0)
 
-;(setq tex-command "pdftex")
+                                        ;(setq tex-command "pdftex")
+
+
+(setq cua-keep-region-after-copy t)
+(setq ido-default-buffer-method 'selected-window)
+(setq ido-default-file-method 'selected-window)
+(setq ido-everywhere t)
+(setq ido-max-directory-size 100000)
+(setq line-spacing '0.25)
 
 ;;; Brent.Longborough's .emacs
 
@@ -405,10 +391,6 @@
         ("setlistdepth" "{")
         ("restartlist" "{")))
 
-(setq org-export-with-smart-quotes t)
-(setq org-export-babel-evaluate nil)
-
-(setq org-src-preserve-indentation t)
 (defun org-carry-forward-uncompleted-tasks ()
   "Carry forward uncompleted tasks."
   (interactive)
@@ -434,26 +416,26 @@
              (string= todo-state "NEXT") ) ;; todo-state equals "X"
           (org-deadline nil ".") )))))
 
-(defun send-agenda ()
-  "Rebuild and export org-agenda files"
-  (interactive)
-  (setq inhibit-iso-escape-detection t)
-  (setq org-export-with-broken-links t)
-  (setq org-export-with-smart-quotes t)
-  (find-file "~/Dropbox/notes/todo.org")
-  (org-carry-forward-uncompleted-tasks) ;; See http://emacs.stackexchange.com/questions/5699/org-mode-trigger-todo-status-on-a-certain-date/5700#5700
-  (org-store-agenda-views))
-(eval-after-load "org"
-  '(send-agenda))
+;; (defun send-agenda ()
+;;   "Rebuild and export org-agenda files"
+;;   (interactive)
+;;   (setq inhibit-iso-escape-detection t)
+;;   (setq org-export-with-broken-links t)
+;;   (setq org-export-with-smart-quotes t)
+;;   (find-file "~/Dropbox/notes/org/todo.org")
+;;   (org-carry-forward-uncompleted-tasks) ;; See http://emacs.stackexchange.com/questions/5699/org-mode-trigger-todo-status-on-a-certain-date/5700#5700
+;;   (org-store-agenda-views))
+;; (eval-after-load "org"
+;;   '(send-agenda))
 
 ;; Custom file and theme again
 (setq custom-file "~/Dropbox/.emacs.d/custom.el")
 (load custom-file)
-(load-theme 'RyanTheme)
-(setq-default custom-enabled-themes '(RyanTheme))
+                                        ;(load-theme 'RyanTheme)
+                                        ;(setq-default custom-enabled-themes '(RyanTheme))
 (put 'narrow-to-region 'disabled nil)
 
-(wc-mode 1)
+
 (defun save-macro (name)
   "Take a name as argument
      and save the last defined macro under
@@ -474,28 +456,7 @@
 (setq-local font-lock-global-modes (not 'org-mode))
 (setq-local hl-line-mode (not 'org-mode))
 
-(setq org-babel-do-load-languages
-      '((awk . t)
-        (clojure . t)
-        (emacs-lisp . t)
-        (gnuplot . t)
-        (haskell)
-        (latex . t)
-        (ledger . t)
-        (js . t)
-        (lisp . t)
-        (org . t)
-        (perl . t)
-        (python . t)
-        (R . t)
-        (sed . t)
-        (shell . t)
-        (sql . t)
-        (sqlite . t)))
 
-(setq org-edit-src-content-indentation 0)
-
-;; Encoding
 
 ;; Use UTF-8 for all character encoding.
 (set-language-environment "UTF-8")
@@ -540,5 +501,9 @@
 
 
 (abbrev-mode 1) ; turn on abbrev mode
+
+(with-eval-after-load 'ox
+  (require 'ox-hugo))
+(provide 'init-local)
 
 (provide 'init-local)

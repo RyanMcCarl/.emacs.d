@@ -1,6 +1,6 @@
 (add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
-(setq auto-fill-mode t)
+(setq auto-fill-mode nil)
 (setq cua-keep-region-after-copy t)
 (setq ido-default-buffer-method 'selected-window)
 (setq ido-default-file-method 'selected-window)
@@ -100,7 +100,7 @@
 (setq org-lowest-priority ?C)
 (setq org-M-RET-may-split-line nil)
 (setq org-mobile-use-encryption nil)
-(setq org-mode-hook 'turn-on-auto-fill)
+
 (setq org-mouse-features (quote (activate-bullets activate-checkboxes)))
 (setq org-odd-level-only nil)
 (setq org-outline-path-complete-in-steps nil)
@@ -309,6 +309,6 @@ Octopress Settings:
          :base-directory "~/wbblog/org/"
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
          :publishing-directory "~/wbblog/html/"
-         :recursive 
+         :recursive
          :publishing-function org-publish-attachment))
-        
+

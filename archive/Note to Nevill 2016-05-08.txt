@@ -1,0 +1,32 @@
+Hi Nevill, 
+
+I said a month ago I needed to see some major changes in the level of care you were taking with your work for our working relationship to succeed. I spent several hours explaining the problems to you and made a long list of items that I specifically asked you to fix and watch for going forward. 
+
+One of those items was: "Did you give the page a description that will appear in the tab (not "title", as in the screenshot)?" I have told you to fix this and to push it to the live site at least six times since April 8, and Sujay and Carlee have reminded you to fix it at least once each. Given that, it is inexcusable that the live site still has a tab that is labeled "title" on the list page or any other page. I see you have now fixed this on the development site, but have not pushed it to the live site. Since I asked you to do that within 12 hours a month ago and you assured me twice that you would, that is just not good enough. There are other problems as well, but we do not need to go into them.
+
+I have enjoyed working with you, but unfortunately I have to end your contract. Notwithstanding the concerns I have had, you have helped a lot with the site during your time working with us. Thank you for all of your help, and best of luck on your other jobs.
+
+Slack exchanges re "title" tab:
+
+April 8: rym21: @nevill_nguyen The tab says "title". So there is a lot to be done here; it certainly shouldn't be on the live site.
+
+April 16: 
+rym21: @nevill_nguyen The tab says "title". and I can't test it if Carlee and I cannot access the page.
+
+RyM21 @nevill_nguyen: "(10) Did you give the page a description that will appear in the tab (not "title", as in the screenshot)? If Chloe or I haven't specified the description, please ask and I will provide the text. . . . Can you agree to check for these before making commits in the future? 
+
+ April 25: rym21: @nevill_nguyen Please do not forget to check for the items on this list. I see a site description of "title" in the tab (#10).
+ 
+April 26: sujaytendulkar: @nevill_nguyen: We need to give a title to wordlists page. Presently default word 'title' is appearing.
+
+rym21: @nevill_nguyen Sujay just pointed out that the list page has a misspelling and says "title" in the tab on the live site. Please fix these immediately and generate a pull request to update the live site in the next 12 hours.
+
+nevill_nguyen: Ok @rym21 I will check this bug and fix it"
+
+nevill_nguyen  @rym21: @carlee  title will be fixed in next commit
+
+nevill_nguyen BTW, title will be fixed by next commit. Thanks
+
+April 26 JIRA task: Study lists browser tab says "title" -- please change!
+
+May 3: WB front-end quality assurance checklist: "Did you give the page a description that will appear in the tab (not "title")?"

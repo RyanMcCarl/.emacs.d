@@ -8,7 +8,7 @@
  '(org-agenda-sorting-strategy (quote ((agenda todo-state-down deadline-down priority-down effort-up) (todo todo-state-down deadline-down priority-down effort-up) (tags priority-down category-keep) (search category-keep))))
  '(org-archive-location "%s_archive::~/notes/archive")
  '(org-complete-tags-always-offer-all-agenda-tags t)
- '(org-directory "~/notes")
+ '(org-directory "~/notes/org")
  '(org-export-backends (quote (ascii html icalendar latex md org deck freemind rss)))
  '(org-hierarchical-todo-statistics nil)
  '(org-startup-folded t)

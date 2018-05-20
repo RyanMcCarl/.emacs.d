@@ -31,12 +31,16 @@
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "C-x C-m") 'save-macro)
 (global-set-key (kbd "C-c C-b") 'bookmark-set)
-(global-set-key (kbd "C-c r c") 'customize-face)
+(global-set-key (kbd "C-c r c") 'customize-faoce)
+(global-set-key (kbd "C-c r h") 'insert-html-block)
+(global-set-key (kbd "C-c r m") 'insert-markdown-block)
+
 (global-set-key (kbd "C-c r o") 'switch-window-then-swap-buffer)
 (global-set-key (kbd "C-c r v") 'customize-variable)
 
 ;; Global
 (global-set-key (kbd "C-M-s") 'section-sign-plus-nonbreaking-space)
+(global-set-key (kbd "C-M-p") 'insert-paragraph-sign)
 (global-set-key (kbd "C-M-.") 'insert-ellipsis)
 (global-set-key (kbd "C-M--") 'insert-em-dash)
 
@@ -73,6 +77,11 @@
 
 (defun my-org-mode-config ()
   (org-indent-mode 1)
+  (local-set-key (kbd "C-M-s") 'section-sign-plus-nonbreaking-space)
+  (local-set-key (kbd "C-M-p") 'insert-paragraph-sign)
+  (local-set-key (kbd "C-M-.") 'insert-ellipsis)
+  (local-set-key (kbd "C-M--") 'insert-em-dash)
+
   (local-set-key (kbd "C-x C-h 3") 'org-insert-third-level-star-headline)
   (local-set-key (kbd "M-a") 'org-table-beginning-of-field)
   (local-set-key (kbd "C-c r t") 'org-table-create)
@@ -102,7 +111,7 @@
   (local-set-key (kbd "C-c .") 'org-promote-subtree)
   (local-set-key (kbd "C-c r b") 'insert-blog-post-from-header)
   (local-set-key (kbd "C-c r p") 'insert-blog-post-from-header))
-  (setq org-modules '(org-gnus org-id org-habit org-irc org-protocol org-eww org-bbdb org-choose org-depend yasnippet markdown-mode))
+(setq org-modules '(org-gnus org-id org-habit org-irc org-protocol org-eww org-bbdb org-choose org-depend yasnippet markdown-mode))
 
 ;; Ledger Mode
 (defun my-ledger-mode-config ()

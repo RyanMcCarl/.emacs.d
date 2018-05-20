@@ -61,7 +61,7 @@
 (require 'init-functions)
 (require 'init-macros)
 ;; Org-mode
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 ;; YASnippet
 (yas-global-mode 1)
 ;; Python
@@ -416,7 +416,7 @@
 (setq org-edit-src-content-indentation 0)
 
 ;; Get word wrap in org source code blocks
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 (setq company-mode t)

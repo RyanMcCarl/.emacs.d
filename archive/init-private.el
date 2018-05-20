@@ -1,4 +1,4 @@
-(setq custom-file "~/.emacs.d/custom.el")
+(setq custom-file "~/Dropbox/.emacs.d/custom.el")
 
 (setq org-gcal-client-id "423774851109-hvti3gb2p47qpbqe7lluq3g43rqgv19j.apps.googleusercontent.com")
 (setq org-gcal-client-secret "Sp8P3w3snXs_pumauWb8VzkZ")

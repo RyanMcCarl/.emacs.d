@@ -3,14 +3,18 @@
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
-;; Packages
+;; Load path
+(defvar user-emacs-dir (expand-file-name "~/Dropbox/.emacs.d/"))
 (add-to-list 'load-path (expand-file-name "ryanlisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "amazon-this" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "wikipedia-this" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "amazon-this" user-emacs-directory))
+
+;; Packages
+(require 'package)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+
 (package-initialize)
-
-
 (package-refresh-contents)
 
 ;; Packages that don't play nice on Windows
@@ -25,19 +29,21 @@
 
 ;; Load private variables and authentication tokens
 (ignore-errors
-  (load-file '"~/Dropbox/.emacs.d/.private.el")
+
+  (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-private.el")
   (require 'color-identifiers-mode)
   (require 'ob-async))
 
+
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/custom.el"))
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el"))
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-macros.el"))
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-misc.el"))
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/orgconfig.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/package-list.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/requires.el"))
 (ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/requires2.el"))
-(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-macros.el"))
-(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el"))
-                                        ;(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/custom-settings.el"))
-(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el"))
-(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/init-misc.el"))
-
+(ignore-errors (load-file '"~/Dropbox/.emacs.d/ryanlisp/ryan-abbrev.el"))
 
 ;; Custom file and theme
 (setq custom-file "~/Dropbox/.emacs.d/custom.el")
@@ -468,7 +474,7 @@
 
 ;; Get word wrap in org source code blocks
 
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 
@@ -478,29 +484,9 @@
 (setq ivy-mode t)
 (global-auto-revert-mode t)
 
-
-(define-abbrev-table 'global-abbrev-table '(
-                                            ("alpha" "α")
-                                            ("inf" "∞")
-                                            ("ar" "→")
-                                            (" s." " § ")
-                                            (" sec. " " § ")
-                                            (" usc " " U.S.C. ")
-                                            ("ccp" "Cal. Code Civ. Proc. § ")
-                                            (" ca3" " Cal. App. 3d ")
-                                            (" ca4" " Cal. App. 4th ")
-                                            (" ca5" " Cal. App. 5th ")
-                                            (" Cal. 2d" " Cal. 2d ")
-                                            (" Cal. 3d" " Cal. 3d ")
-                                            (" Cal. 4" " Cal. 4thd ")
-                                            (" Cal. 5" " Cal. 5th ")
-                                            ("hhe" "rmccarl@hueston.com")
-                                            ("--" "–")
-                                            ("---" "—")
-                                            ))
-
-
 (abbrev-mode 1) ; turn on abbrev mode
+
+(ignore-errors (find-file '"~/Dropbox/notes/org/todo.org"))
 
 (with-eval-after-load 'ox
   (require 'ox-hugo))

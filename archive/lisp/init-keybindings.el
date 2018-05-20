@@ -2,6 +2,9 @@
 
 (global-unset-key (kbd "C-c r"))  ;; Allow C-c r as personal prefix key
 (global-unset-key (kbd "C-c m"))  ;; Allow C-c m as personal prefix key
+
+
+
 (global-set-key (kbd "C-c ESC") 'save-buffers-kill-emacs)
 (global-set-key (kbd "C-c m p") 'mark-paragraph)
 (global-set-key (kbd "C-c m s") 'mark-end-of-sentence)
@@ -29,11 +32,12 @@
 (global-set-key (kbd "C-x C-m") 'save-macro)
 (global-set-key (kbd "C-c C-b") 'bookmark-set)
 (global-set-key (kbd "C-c r c") 'customize-face)
+(global-set-key (kbd "C-c r o") 'switch-window-then-swap-buffer)
 (global-set-key (kbd "C-c r v") 'customize-variable)
 
 ;; Global
 (global-set-key (kbd "C-M-s") 'section-sign-plus-nonbreaking-space)
-(global-set-key (kbd "C-M-.") 'add-ellipsis)
+(global-set-key (kbd "C-M-.") 'insert-ellipsis)
 (global-set-key (kbd "C-M--") 'insert-em-dash)
 
 ;; RST-mode

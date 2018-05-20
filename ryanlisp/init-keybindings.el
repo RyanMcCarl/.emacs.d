@@ -31,7 +31,10 @@
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "C-x C-m") 'save-macro)
 (global-set-key (kbd "C-c C-b") 'bookmark-set)
-(global-set-key (kbd "C-c r c") 'customize-face)
+(global-set-key (kbd "C-c r c") 'customize-faoce)
+(global-set-key (kbd "C-c r h") 'insert-html-block)
+(global-set-key (kbd "C-c r m") 'insert-markdown-block)
+
 (global-set-key (kbd "C-c r o") 'switch-window-then-swap-buffer)
 (global-set-key (kbd "C-c r v") 'customize-variable)
 

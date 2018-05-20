@@ -41,7 +41,7 @@
 
 ;; Org-mode
 
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 
 (setq org-todo-keywords
       '(
@@ -469,7 +469,7 @@
         (sqlite . t)))
 
 (setq org-edit-src-content-indentation 0)
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 (setq company-mode t)

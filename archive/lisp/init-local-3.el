@@ -45,7 +45,7 @@
 (require 'init-functions)
 (require 'init-macros)
 ;; Org-mode
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 (setq org-todo-keywords
       '(
         (sequence "NEXT(n)" "TODO(t)" "RECURRING(r)" "WAITING(w)" "|" "DONE(d!/!)")
@@ -409,7 +409,7 @@
 (set-locale-environment "en.UTF-8")
 (prefer-coding-system 'utf-8)
 (setq utf-translate-cjk-mode nil) ; disable CJK coding/encoding
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 (setq company-mode t)

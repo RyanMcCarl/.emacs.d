@@ -18,10 +18,10 @@
 (fset 'add-star-emphasis
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("**" 0 "%d")) arg)))
 
-
 (fset 'make-list-item
-                                        ;  (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([1 45 32 down 1] 0 "%d")) arg)))
-      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([down 1 1 45 32] 0 "%d")) arg)))
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("
+- " 0 "%d")) arg)))
+
 
 (fset 'make-markdown-link
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("\342[]()" 0 "%d")) arg)))
@@ -32,7 +32,6 @@
 
 (fset 'make-checkbox
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("- [ ] " 0 "%d")) arg)))
-
 
 (fset 'section-sign-plus-nonbreaking-space
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([134217848 up return up up return 134217848 up return up up return] 0 "%d")) arg)))
@@ -82,6 +81,12 @@
 
 (fset 'insert-paragraph-sign
       (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([134217848 105 110 115 101 114 116 45 99 104 97 114 return 112 97 114 97 103 114 97 112 104 32 115 105 103 110 return 134217848 105 110 115 101 114 116 45 99 104 97 114 return 110 111 110 98 114 101 backspace backspace backspace 45 98 114 101 97 107 105 110 103 32 115 112 97 99 101 return] 0 "%d")) arg)))
+
+(fset 'insert-html-block
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([3 22 4 104 116 109 108 return return] 0 "%d")) arg)))
+
+(fset 'insert-markdown-block
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([3 22 4 109 97 114 107 100 111 119 110 return return] 0 "%d")) arg)))
 
 (provide 'init-macros)
 

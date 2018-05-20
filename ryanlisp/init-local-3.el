@@ -45,7 +45,7 @@
 (require 'init-functions)
 (require 'init-macros)
 ;; Org-mode
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 (setq org-todo-keywords
       '(
         (sequence "NEXT(n)" "TODO(t)" "RECURRING(r)" "WAITING(w)" "|" "DONE(d!/!)")
@@ -409,7 +409,7 @@
 (set-locale-environment "en.UTF-8")
 (prefer-coding-system 'utf-8)
 (setq utf-translate-cjk-mode nil) ; disable CJK coding/encoding
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 (setq company-mode t)
@@ -417,11 +417,11 @@
 (setq paradox-github-token "62dc3b38b6b98a410c046e1da9bae993b1473e36")
 (setq ivy-mode t)
 (global-auto-revert-mode t)
-(add-to-list 'load-path "~/.emacs.d/amazon-this")
-(add-to-list 'load-path "~/.emacs.d/lisp")
-(add-to-list 'load-path "~/.emacs.d/lisp/lentic")
-(add-to-list 'load-path "~/.emacs.d/lisp/org-reveal")
-(add-to-list 'load-path "~/.emacs.d/wikipedia-this")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/amazon-this")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp/lentic")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp/org-reveal")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/wikipedia-this")
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -429,19 +429,19 @@
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 ;; Require
 
-(load-file '"~/.emacs.d/ryanlisp/package-list.el")
-(load-file '"~/.emacs.d/ryanlisp/requires.el")
-(load-file '"~/.emacs.d/ryanlisp/requires2.el")
-(load-file '"~/.emacs.d/ryanlisp/init-macros.el")
-(load-file '"~/.emacs.d/ryanlisp/init-keybindings.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/package-list.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/requires.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/requires2.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/init-macros.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el")
 
-(add-to-list 'load-path "~/.emacs.d/ryanlisp")
-  (load-file '"~/.emacs.d/.private.el")
-(setq custom-file "~/.emacs.d/custom.el")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/ryanlisp")
+  (load-file '"~/Dropbox/.emacs.d/.private.el")
+(setq custom-file "~/Dropbox/.emacs.d/custom.el")
 
-(defvar backup-dir (expand-file-name "~/.emacs.d/backup"))
+(defvar backup-dir (expand-file-name "~/Dropbox/.emacs.d/backup"))
 
-(defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
+(defvar autosave-dir (expand-file-name "~/Dropbox/.emacs.d/autosave/"))
 (find-file "~/notes/todo.org")
 
 (find-file "~/Dropbox/notes/todo.org")

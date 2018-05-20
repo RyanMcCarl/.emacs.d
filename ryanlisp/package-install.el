@@ -105,6 +105,7 @@
 (package-install 'ob-browser)
 (package-install 'ob-mongo)
 (package-install 'ob-typescript)
+(package-install 'org)
 (package-install 'org-alert)
 (package-install 'org-autolist)
 (package-install 'org-babel-eval-in-repl)
@@ -119,6 +120,7 @@
 (package-install 'org-page)
 (package-install 'org-publish-agenda)
 (package-install 'ox-epub)
+(package-install 'ox-hugo)
 (package-install 'ox-pandoc)
 (package-install 'ox-reveal)
 (package-install 'ox-rst)
@@ -222,3 +224,5 @@
 (package-install 'writeroom-mode)
 (package-install 'yaml-mode)
 (package-install 'yasnippet)
+
+(provide 'package-install)

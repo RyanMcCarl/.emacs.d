@@ -74,7 +74,12 @@
    (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([67108896 5 134217847] 0 "%d")) arg)))
 
 (fset 'insert-link-from-clipboard
-   (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([134217848 109 97 114 107 111 backspace 45 115 101 110 tab return 3 108 25 return return return] 0 "%d")) arg)))
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([134217848 109 97 114 107 111 backspace 45 115 101 110 tab return 3 108 25 return return return] 0 "%d")) arg)))
+
+
+(fset 'insert-ellipsis
+      (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ([134217848 110 backspace 105 110 115 101 114 116 32 99 104 97 114 return 110 111 32 backspace 110 32 98 114 101 97 107 105 110 103 32 115 97 99 101 backspace backspace backspace 112 97 99 101 return 46 134217848 return up return 46 134217848 return up return 46 134217848 return up return] 0 "%d")) arg)))
+
 
 (provide 'init-macros)
 

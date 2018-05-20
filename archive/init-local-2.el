@@ -1,11 +1,11 @@
 ;; -*- lexical-binding: t -*-
 
 ;; Packages
-(add-to-list 'load-path "~/.emacs.d/amazon-this")
-(add-to-list 'load-path "~/.emacs.d/lisp")
-(add-to-list 'load-path "~/.emacs.d/lisp/lentic")
-(add-to-list 'load-path "~/.emacs.d/lisp/org-reveal")
-(add-to-list 'load-path "~/.emacs.d/wikipedia-this")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/amazon-this")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp/lentic")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/lisp/org-reveal")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/wikipedia-this")
 
 (package-initialize)
 
@@ -25,22 +25,22 @@
 
 
 ;; Require
-(load-file '"~/.emacs.d/ryanlisp/package-list.el")
-(load-file '"~/.emacs.d/ryanlisp/requires.el")
-(load-file '"~/.emacs.d/ryanlisp/requires2.el")
-(load-file '"~/.emacs.d/ryanlisp/init-macros.el")
-(load-file '"~/.emacs.d/ryanlisp/init-keybindings.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/package-list.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/requires.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/requires2.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/init-macros.el")
+(load-file '"~/Dropbox/.emacs.d/ryanlisp/init-keybindings.el")
 
-(add-to-list 'load-path "~/.emacs.d/ryanlisp")
+(add-to-list 'load-path "~/Dropbox/.emacs.d/ryanlisp")
 
 ;; Load private variables and authentication tokens
 (ignore-errors
-  (load-file '"~/.emacs.d/.private.el")
+  (load-file '"~/Dropbox/.emacs.d/.private.el")
   (require 'private))
 
 ;; Custom file and theme
 (global-lentic-mode 1)
-(setq custom-file "~/.emacs.d/custom.el")
+(setq custom-file "~/Dropbox/.emacs.d/custom.el")
 (load custom-file)
 ;(load-theme 'RyanTheme)
 (color-theme-sanityinc-tomorrow-eighties)
@@ -61,7 +61,7 @@
 (require 'init-functions)
 (require 'init-macros)
 ;; Org-mode
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 ;; YASnippet
 (yas-global-mode 1)
 ;; Python
@@ -72,8 +72,8 @@
 ;(add-to-list 'org-reveal-external-plugins '("slideshow-recorder" . "{ src: '%splugin/audio-slideshow/slideshow-recorder.js', async:true, condition: jscallbackfunction(){} }" ))
 ;(add-to-list 'org-reveal-external-plugins '("audio-slideshow" . "{ src: '%splugin/audio-slideshow/audio-slideshow.js', async:true, condition: jscallbackfunction(){} }" ))
 ;; Autosave/backup
-(defvar backup-dir (expand-file-name "~/.emacs.d/backup/"))
-(defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
+(defvar backup-dir (expand-file-name "~/Dropbox/.emacs.d/backup/"))
+(defvar autosave-dir (expand-file-name "~/Dropbox/.emacs.d/autosave/"))
 (setq backup-directory-alist (list (cons ".*" backup-dir)))
 (setq auto-save-list-file-prefix autosave-dir)
 (setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
@@ -416,7 +416,7 @@
 (setq org-edit-src-content-indentation 0)
 
 ;; Get word wrap in org source code blocks
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 (setq company-mode t)

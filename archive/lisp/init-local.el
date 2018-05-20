@@ -67,7 +67,7 @@
 
 ;; Org-mode
 
-(setq org-descriptive-links t)
+(setq org-descriptive-links nil)
 
 (setq org-todo-keywords
       '(
@@ -508,7 +508,7 @@
 
 ;; Get word wrap in org source code blocks
 
-(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+
 (setq org-latex-listings t)
 (setq org-latex-listings-options '(("breaklines" "true")))
 

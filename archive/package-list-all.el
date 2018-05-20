@@ -166,6 +166,7 @@ orgnav
 origami
 ox-epub
 ox-gfm
+ox-hugo
 ox-jira
 ox-reveal
 ox-rst

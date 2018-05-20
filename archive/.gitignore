@@ -1,5 +1,3 @@
-# Compiled
+*~
+*.html
 *.elc
-
-# Packaging
-.cask

@@ -23,7 +23,7 @@
      (sql)
      (sqlite))))
  '(org-default-notes-file "~/Dropbox/notes/org/notes.org")
- '(org-descriptive-links t)
+ '(org-descriptive-links nil)
  '(org-export-backends (quote (html icalendar latex md odt org reveal hugo)))
  '(org-hugo-export-creator-string "Ryan McCarl")
  '(org-journal-dir "~/Dropbox/notes/org/journal")

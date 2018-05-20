@@ -4,10 +4,10 @@
 (add-hook 'org-finalize-agenda-hook 'place-agenda-tags)
 (with-eval-after-load 'ox
   (require 'ox-hugo))
-(provide 'init-local)
+
 
                                         ; (setq org-agenda-files (quote ("~/Dropbox/notes/org/todo.org")))
-(setq auto-fill-mode t)
+(setq auto-fill-mode nil)
 (setq opened-org-agenda-files nil)
 (setq org-M-RET-may-split-line nil)
 (setq org-adapt-indentation t)
@@ -40,7 +40,7 @@
 (setq org-agenda-start-on-weekday nil)
 (setq org-agenda-start-with-log-mode t)
 (setq org-agenda-sticky nil)
-(setq org-agenda-tags-column -100)
+(setq org-agenda-tags-coluemn -120)
 (setq org-agenda-todo-ignore-scheduled nil)
 (setq org-agenda-todo-keyword-format "%-10s")
 (setq org-agenda-todo-list-sublevels t)
@@ -107,7 +107,7 @@
 (setq org-loop-over-headlines-in-active-region t)
 (setq org-lowest-priority ?C)
 (setq org-mobile-use-encryption nil)
-(setq org-mode-hook 'turn-on-auto-fill)
+
 (setq org-mouse-features (quote (activate-bullets activate-checkboxes)))
 (setq org-odd-level-only nil)
 (setq org-outline-path-complete-in-steps nil)
@@ -136,7 +136,7 @@
 (setq org-table '(:foreground "LightSkyBlue" :height 1.0 :family "Consolas"))
 (setq org-table-export-default-format "orgtbl-to-csv")
 (setq org-tag-faces (quote (("urgent" . "red"))))
-(setq org-tags-column 80)
+(setq org-tags-column -100)
 (setq org-tags-match-list-sublevels t)
 (setq org-tags-sort-function (quote string<))
 (setq org-time-stamp-rounding-minutes '(0 15))
@@ -313,7 +313,7 @@ SCHEDULED: %t
          :base-directory "~/wbblog/org/"
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
          :publishing-directory "~/wbblog/html/"
-         :recursive 
+         :recursive
          :publishing-function org-publish-attachment)))
 
 (setq org-babel-do-load-languages
@@ -332,8 +332,8 @@ SCHEDULED: %t
                                         ;      (R . t)
         (sed . t)
         (shell . t)
-                                        ;     (sql . t)
-                                        ;    (sqlite . t)
+        (sql . t)
+        (sqlite . t)
         ))
 
 (setq org-edit-src-content-indentation 0)
@@ -342,6 +342,4 @@ SCHEDULED: %t
 
 (define-obsolete-function-alias 'org-define-error 'define-error)
 
-(with-eval-after-load 'ox
-  (require 'ox-hugo)
-  (require 'ox-reveal))
+(provide 'orgconfig)

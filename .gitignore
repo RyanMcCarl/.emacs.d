@@ -50,3 +50,10 @@ site-lisp/package/
 /rake.cache
 /plantuml.jar
 /magithub
+purcell-emacs/
+.private
+*.jar
+./init-*
+.uptimes*
+*conflicted*
+

@@ -1,0 +1,155 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/rmccarl/Dropbox/.emacs.d/" . "lisp/")
+ ("c:/Users/rmccarl/" . "Dropbox/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/" . "archives/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/layouts/" . "_default/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/" . "archetypes/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/bare-min-theme/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/" . "xmin/")
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/" . "layouts/")
+ ("c:/Users/rmccarl/Dropbox/dev/" . "hugotemplate/")
+ ("c:/Users/rmccarl/Dropbox/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/rmccarl/Dropbox/.emacs.d/"
+ "c:/Users/rmccarl/Dropbox/.emacs.d/lisp/"
+ "c:/Users/rmccarl/Dropbox/.emacs.d/ryanlisp/"
+ "c:/Users/rmccarl/Dropbox/notes/org/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/archives/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/about/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/archetypes/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/layouts/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/archetypes/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/partials/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/section/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/layouts/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/layouts/_default/"
+ "c:/Users/rmccarl/Dropbox/law/SCE/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "custom.el"
+ "whole-line-or-region.el"
+ "requires.el"
+ "package-list.el"
+ "init-local.el"
+ "notes.org"
+ "baseof.html"
+ "list.html"
+ "config.toml"
+ "_index.md"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/rmccarl/Dropbox/law/SCE/" (23274 931 0 0) "~$und Fire reply dumpfile.org" "~$ber v. SCE - Motion for legal determination (filed).pdf" "Yox v City of Whittier, 182 Cal.App.3d 347 (1986).pdf" "White Paper On Application Of Inverse Reform To Pending Claims (00169550x9F4FB).doc" "Van Alstyne, damage is for public use if results from government project “as deliberately conceived.”.pdf" "US West, Inc. v. Tristani, 182 F.3d 1202 (10th Cir. 1999) - Johnson Act barred challenge.pdf" "US West, Inc. v. Nelson, 146 F. 3d 718 (9th Cir. 1998).pdf" "Treatise page on “public use” requirement and Customer Co. v. Sacramento County (10 Cal. 4th 368 (1995)), 29 Cal. Jur. Eminent Domain § 355.pdf" "Travelers Ins. Co. v. Ingebretsen, 38 Cal. App. 3d. 858, 863–64 (1974).png" "Text of Cal. Const. art. I, section 19.docx" "Strategy for a federal takings suit against CPUC 2018-02-14 - Final.pdf" "Strategy for a federal takings suit against CPUC 2018-02-14 - Final.docx" "Strategy for a federal takings suit against CPUC 2018-02 - Final.docx" "Stip for extension of time to respond to complaint.docx" "Statutory Modification of Inverse Condemnation, 19 Stan. L. Rev. 727 (1967).pdf" "Southern California Edison v. Lynch, Order denying motion for PI, 2001 WL 765624 (C.D. Cal.) (unpub’d).pdf" "Southern California Edison v. Lynch, brief in opposition to motion to dismiss, 2000 WL 35449022 (C.D.Cal.).pdf" "So. Cal. Edison Co. amicus brief iso PG&E's renewed motion for legal determination - Butte Fire.pdf" "Sinclair Oil Corp v County of Santa Barbara.pdf" "SDG&E v. City of San Diego, 450 U.S. 621, 630 (1981) - reference to mandamus or declaratory relief as alternatives to inverse a.pdf" "SCE Legal Research 2018-03-21.onepkg" "SCE insurance email memo 2018-05-02.md" "SCE insurance email memo 2018-05-02" "SCE - 2018.02.27 - Updated Memorandum re Mudslide Liability and Damages.pdf" "SCE - 2018.02.27 - Updated Memorandum re Mudslide Liability and Damages.docx" "San Diego Gas & Electric Co. v. Superior Court, 13 Cal.4th 893 (1996).pdf" "Sable Communications of California Inc. v. Pacific Tel. & Tel. Co., 890 F.2d 184 (9th Cir. 1989).pdf" "Round Fire reply dumpfile.org" "Round Fire reply brief iso motion for legal determination.org" "Round Fire MLD/" "Projected timeline after filing Round Fire Motion for Legal Determination.xlsx" "Projected timeline after filing Round Fire Motion for Legal Determination - 2.xlsx" "Presentation re Inverse Condemnation.pptx" "Plaintiffs' arguments against inverse in Butte Fire/" "PG&E's renewed motion for legal determination - Butte Fire cases.pdf" "PG&E motion re inverse — why strict liability  .pdf" "Pacific Bell Telephone Co. v. Southern California Edison Co., 208 Cal.App.4th 1400 (2012).pdf" "Montana v. U.S..pdf" "Memo re Thomas Fire defense memo - working doc - 2018-03-07.pdf" "Memo re Thomas Fire defense memo - working doc - 2018-03-07.docx" "Memo re regulations cited in wildfire complaints - 2018-02.docx" "Memo re regulations cited in wildfire complaints - 2018-02-14.pdf" "Memo re Public Entity Immunity and Claims Procedures for Equitable Indemnification.docx" "Memo re Public Entity Immunity and Claims Procedures for Equitable Indemnification 2018-02-06.pdf" "Memo re Mudslide Liability and Damages 2018-02-27.pdf" "Memo re Lost Tax Revenue as Damages - 2018-03-09.pdf" "Memo re Lost Tax Revenue as Damages - 2018-03-09.docx" "Memo re Constitutional and Procedural Considerations for Suing Federal Agencies.pdf" "Memo re Constitutional and Procedural Considerations for Suing Federal Agencies.docx" "Memo re claims for trial setting preference.pdf" "Memo re claims for trial setting preference.docx" "Laitos, Taking of Private Property for Private Use.pdf" "Kelo v City of New London, 545 U.S. 469 (2005).pdf" "Johnson Act - 28 U.S.C. § 1342 - Rate orders of State agencies.pdf" "Inverse Reform Constitutional Issues White Paper (00169300-3x9F4FB).doc" "Inverse Condemnation White Paper (00169264-5x9F4FB).docx" "Inverse Condemnation Reform Legislation -- RM page one edits.docx" "Inverse Condemnation Reform Legislation -- RM all edits.docx" "Inverse Condemnation Case Summaries 2018-03-21.pdf" "Hawaiian Telephone Co v Public Utilities Comn of State of Hawaii.pdf" "FTCA statute of limitations and exhaustion requirement Q & A 2018-03-21.pdf" "FASAB Statement 12 (F.A.S.A.B.), 1998 WL 34336453 - Recognition of contingent liabilities arising from litigation.pdf" "England v. Louisiana State Bd. of Medical Examiners, 375 U.S. 411 (1964).pdf" "edison2.org" "edison.org~" "edison.org_archive" "edison.org" "Draft letter for preservation of evidence to hot-line.docx" "Draft Legislation to Reform Inverse- Eliminate Strict Liability -- RM all edits.docx" "Draft Legislation to Reform Inverse- Eliminate Strict Liability (00169419-5x9F4FB).docx" "Desoto Cab Company, Inc. v. Picker, 196 F. Supp. 3d 1107 (N.D. Cal. 2016).pdf" "Current inverse cases/" "Current cases/" "Clean copy of RM edits - Inverse Condemnation Reform Legislation.docx" "Cary v. US - US brief iso motion to dismiss (SD Cal 2007 WL 1932582).pdf" "California negligence Q & A 2018-03-21.pdf" "Cal. Civ. Jury Instruction 416 - Amount of caution needed in transmitting electric power.pdf" "Butte Fires amicus brief iso motion for legal determination (final).docx" "Benefits of prompt vs. delayed federal challenge.xlsx" "Belair v. Riverside County Flood Control Dist., 47 Cal.3d 550 (1988).pdf" "Barham v. Southern Cal. Edison Co., 74 Cal.App.4th 744 (1999).pdf" "archive/" "Appendix A - SCE Expert Summary & Evaluation.xlsx" "American Bankers Management Company, Inc. v. Heryford, 190 F.Supp.3d 947 (2016).pdf" "ABMC v. Heryford Complaint.pdf" "2018-03-22 Inverse Condemnation Talking Points for 3-27 Meeting - RM edits.docx" "2018-03-21 Background and High-Level Talking Points for 3-22 Call.docx" "2018-03-06 JCCP Case Management Order No. 1.pdf" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/law/" (23274 5066 0 0) "~$law_time_tracker.xlsx" "Witness investigation template.docx" "Witkin, Summary 11th Torts/" "Westlaw research session summaries 2017-18 prior to 2018-04-17.pdf" "Useful pre-filing checklist memo example.docx" "Useful pre-filing checklist memo example - Copy.docx" "unsorted/" "Takings and inverse condemnation/" "Strict liability felonies paper.pdf" "Statutes and rules/" "Stanford Encyclopedia of Philosophy - Wittgenstein's Philosophical Investigations.docx" "Securities Law/" "SCE/" "Sample responses to form rogs.docx" "Sample proof of service template.docx" "Sample meet and confer letter re insufficient interrogatory responses.md" "Sample index of Motion for Summary Judgment exhibits.xlsx" "Reply brief template.DOCX" "Questioning techniques - Trial and deposition practice.pdf" "Preclusion/" "Posner, The Bluebook Blues.pdf" "Negotiation and settlement/" "Motions for Production and Inspection.pdf" "McCarl v. Lincoln Property Co/" "Mart, The Case for Curation - The Relevance of Digest and Citator Results in Westlaw and Lexis.pdf" "Managing Litigation.pdf" "Majoritarianism in Legal Interpretation - Ryan McCarl - Legal Interpretation Paper #2.docx" "Litigating Tort Cases/" "Legal research and citations/" "Legal Interpretation class notes.docx" "law_time_tracker.xlsx" "Lapier organization chart.pdf" "Lapier organization chart.csv" "Examples/" "Ethics/" "Deposition outline template.docx" "Demurrer example.docx" "Declaration template.docx" "decisiontree@2018.04.01_19.39.41.json" "decisiontree@2018.04.01_19.08.06.json" "decisiontree@2018.04.01_18.27.48.json" "DC Bar invoice 2018-04-30.pdf" "contracts.org~" "contracts.org" "Complaint outline.docx" "Class Actions/" "Civil Procedure/" "ch21_property_management_leases.pdf" "cal_civ_pro.org" "Cal. Rules of Court - Class Actions/" "Cal. Civ. Code § 3295.pdf" "Bluebook abbrevations.pdf" "best buy dispute/" "archive/" "Am. Jur. 2d Pleadings/" "Allergan II/" "2018-02-15 - Rolling 12 time report.xlsx" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/.emacs.d/" (23274 36937 0 0) "wikipedia-this/" "test-startup.sh" "templates/" "spu_log/" "snippets/" "site-lisp/" "ryanlisp/" "recentf" "README.md" "README" "purcell-emacs/" "projectile-bookmarks.eld" "plantuml.jar" "org-clock-save.el" "network-security.data" "lisp/" "LICENSE" "init.el" "history" "eshell/" "emacs/" "elpa-26.0/" "elpa-25.3/" "elpa/" "ditaa0_9.jar" "custom.el~" "custom.el" "autosave/" "auto-save-list/" "archive/" "amazon-this/" "abbrev_defs" ".uptimes.el" ".travis.yml" ".smex-items" ".session" ".private" ".org-id-locations" ".last-package-update-day" ".historian" ".gitmodules" ".gitignore" ".git/" ".emacs.desktop.lock" ".emacs.desktop" ".dir-locals.el" ".cask/" ".agignore" ".achievements" "#%2Amerge%2A#6844q8y#" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/notes/org/" (23274 36925 0 0) "wordbrewery.org" "WBtodo.org" "WBCode.org" "valeant.org" "ux_by_example.org" "todo.org" "taxes.org" "submissions.org" "strategies.org" "social_science_notes.org" "regexes.org" "python_fundamentals.org" "python_by_example.org" "programming_tasks.org" "politics.org" "people.org" "org-archive/" "notes.org" "ng_ts_ionic.org" "networking.org" "neo4j_by_example.org" "memoir.org" "linux_cheat_sheet.org" "linux_by_example.org" "learnkana.org" "la_move_notes.org" "law.org" "js_by_example.org.js" "js_by_example.org" "journal.org" "journal/" "javascript_pluralsight.org" "html5_by_example.org" "harlow.org" "habits.org" "go_by_example.org" "fragmentsnew.org" "fragments.org" "fragments.odt" "fragments.md" "flint.org" "emacsguide.org" "elisp_by_example.org" "edison.org" "databases_by_example.org" "css3_by_example.org" "crowdfunding.org" "course_mode_algorithm.org" "coding_notes.org" "calendar.org" "business_pluralsight.org" "building_blog_pluralsight.org" "becomingtechnical.org" "bashcommands.org" "apis.org" "angular_typescript_notes.org" "angular2_first_look.org" "algorithms.org" "2016taxes.org" "#fragments.org#" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/.emacs.d/ryanlisp/" (23274 2740 0 0) "wikipedia-this.el" "wikipedia-this-pkg.el" "wikipedia-this-autoloads.el" "webdev.el" "visual.el" "theme-readtheorg.setup" "RyanTheme-theme.el" "ryaninit.el" "roadmap.org" "requires2.el" "requires.el" "pyconfig.el" "packageload.el" "package-list.el" "package-list-all.el" "package-install.el" "orgconfig.el" "org-reveal/" "org-index.el" "misc-2018-05-01.el" "local.css" "init.el" "init-ruby-mode.el" "init-private.el" "init-misc.el" "init-macros.el" "init-locales.el" "init-local.el" "init-local-3.el" "init-local-2017-12-12.el" "init-local-2.el" "init-ledger.el" "init-keybindings.el" "init-functions.el" "custom-settings.el" "custom-old.el" "custom-backup.el" ".travis.yml" ".gitignore" ".git/" ".ert-runner" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/.emacs.d/lisp/" (23273 21361 0 0) "org-clock-save.el" "init-yaml.el" "init-xterm.el" "init-windows.el" "init-whitespace.el" "init-vc.el" "init-utils.el" "init-uniquify.el" "init-toml.el" "init-themes.el" "init-textile.el" "init-terraform.el" "init-sql.el" "init-spelling.el" "init-smex.el" "init-slime.el" "init-site-lisp.el" "init-sessions.el" "init-rust.el" "init-ruby.el" "init-recentf.el" "init-rails.el" "init-python.el" "init-purescript.el" "init-projectile.el" "init-php.el" "init-paredit.el" "init-osx-keys.el" "init-org.el" "init-nxml.el" "init-nix.el" "init-mmm.el" "init-misc.el" "init-markdown.el" "init-locales.el" "init-local.el" "init-lisp.el" "init-ledger.el" "init-javascript.el" "init-ivy.el" "init-isearch.el" "init-ibuffer.el" "init-http.el" "init-html.el" "init-hippie-expand.el" "init-haskell.el" "init-haml.el" "init-gui-frames.el" "init-grep.el" "init-github.el" "init-git.el" "init-frame-hooks.el" "init-fonts.el" "init-folding.el" "init-flyspell.el" "init-flycheck.el" "init-exec-path.el" "init-erlang.el" "init-elpa.el" "init-elm.el" "init-editing-utils.el" "init-docker.el" "init-dired.el" "init-dash.el" "init-darcs.el" "init-csv.el" "init-css.el" "init-crontab.el" "init-compile.el" "init-company.el" "init-common-lisp.el" "init-clojure.el" "init-clojure-cider.el" "init-benchmarking.el" "emacs-mirror-lisp/" "custom.el" "custom-backup-2018-04-25-workpc.el" ".dir-locals.el" "../" "./")
+
+ ("c:/Users/rmccarl/.emacs.d/elpa-25.3/whole-line-or-region-20180324.2119/" (23274 2816 0 0) "whole-line-or-region.elc" "whole-line-or-region.el" "whole-line-or-region-pkg.el" "whole-line-or-region-autoloads.el" ".#whole-line-or-region.el" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/" (23273 61899 0 0) "writing/" "websites/" "voice-notes/" "unsorted/" "todo/" "scanned memorabilia 2018-01/" "Public/" "plans-etc/" "notes/" "nora/" "medical/" "learning/" "law/" "language/" "finance/" "excel/" "dev/" "desktop.ini" "career/" "bookmarks/" "backup/" "archive and backups/" "Apps/" "ADHD/" ".vscode/" ".emacs.dorg-clock-save.el" ".emacs.d/" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("c:/Users/rmccarl/" (23273 61754 0 0) "_netrc" "Videos/" "timemap/" "test-startup.sh" "Templates/" "Sti_Trace.log" "Start Menu/" "site-lisp/" "SendTo/" "Searches/" "scoop/" "Saved Games/" "Roaming/" "rmccarl@Hueston.com Creative Cloud Files/" "Recent/" "README.md" "python-getting-started/" "purcell-emacs/" "Programs/" "PrintHood/" "Pictures/" "onetab_clean.txt" "OneDrive - HuestonHennigan/" "OneDrive/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{015487ba-8371-11e7-b79f-89e2327c2e8b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{015487ba-8371-11e7-b79f-89e2327c2e8b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{015487ba-8371-11e7-b79f-89e2327c2e8b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "notes/" "nltk_data/" "NetHood/" "My Documents/" "Music/" "mercurial.ini" "Local Settings/" "lisp/" "Links/" "LICENSE" "ledger.dat" "IntelGraphicsProfiles/" "init.el" "HP/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "CSS3/" "Creative Cloud Files/" "Cookies/" "contempt/" "Contacts/" "bin/" "Application Data/" "AppData/" ".viminfo" ".ssh/" ".scoop" ".pylint.d/" ".pricedb" ".Neo4jDesktop/" ".local/" ".ledgerrc" ".jupyter/" ".ipython/" ".insert-shebang.log" ".gnupg/" ".gitconfig" ".emacs.d/" ".elfeed/" ".config/" ".bash_profile" ".bash_history" ".bash_aliases" ".bashrc" ".aliases" "../" "./")
+
+ ("c:/Users/rmccarl/.emacs.d/" (23273 61899 0 0) "wikipedia-this.el" "wikipedia-this-pkg.el" "wikipedia-this-autoloads.el" "wikipedia-this/" "webdev.el" "visual.el" "var/" "theme-readtheorg.setup" "test-startup.sh" "templates/" "spu_log/" "snippets/" "site-lisp/" "server/" "RyanTheme-theme.el" "ryanlisp/" "ryaninit.el" "roadmap.org" "requires2.el" "requires.el" "recentf" "README.md" "README" "pyconfig.el" "purcell-emacs/" "projectile-bookmarks.eld" "plantuml.jar" "packageload.el" "package-list.el" "package-list-all.el" "package-install.el" "orgconfig.el" "org-reveal/" "org-index.el" "org-clock-save.el" "network-security.data" "misc.el" "magithub/" "local.css" "lisp/" "LICENSE" "init.el" "init-ruby-mode.el" "init-private.el" "init-misc.el" "init-macros.el" "init-locales.el" "init-local.el" "init-local-3.el" "init-local-2017-12-12.el" "init-local-2.el" "init-ledger.el" "init-keybindings.el" "init-functions.el" "history" "eshell/" "emacs/" "elpa-26.0/" "elpa-25.3/" "elpa/" "ditaa0_9.jar" "custom.el~" "custom.el" "custom-settings.el" "custom-old.el" "custom-backup.el" "custom-backup-2018-04-25.el" "autosave/" "auto-save-list/" "archive/" "amazon-this/" "abbrev_defs" ".uptimes.el" ".travis.yml" ".smex-items" ".session" ".private" ".org-id-locations" ".last-package-update-day" ".historian" ".gitmodules" ".gitignore" ".git/" ".ert-runner" ".emacs.desktop" ".dir-locals.el" ".cask/" ".agignore" ".achievements" "#%2Amerge%2A#6844q8y#" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/layouts/_default/" (23273 27122 0 0) "list.html" "baseof.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/layouts/" (23273 26641 0 0) "_default/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/" (23273 25661 0 0) "xmin/" "whiteplain/" "simplea/" "ryantheme/" "onetwothree/" "one/" "elephants/" "blank/" "bare-min-theme/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/about/" (23273 24814 0 0) "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/archives/" (23273 25074 0 0) "_index.md" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/" (23273 26541 0 0) "themes/" "static/" "layouts/" "fragments.org" "data/" "content/" "config.toml" "archetypes/" ".gitmodules" ".git/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/content/" (23273 24858 0 0) "testpage.md" "posts/" "archives/" "about.md" "about/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/archetypes/" (23273 506 0 0) "default.md" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/layouts/partials/" (23273 506 0 0) "head_custom.html" "header.html" "foot_custom.html" "footer.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/layouts/_default/" (23273 506 0 0) "single.html" "list.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/layouts/" (23273 24187 0 0) "_default/" "partials/" "index.html" "404.html" ".#index.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/archetypes/" (23273 506 0 0) "default.md" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/onetwothree/" (23273 506 0 0) "theme.toml" "static/" "README.md" "LICENSE.md" "layouts/" "images/" "docs/" "archetypes/" ".git" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/_default/" (23273 506 0 0) "terms.html" "single.html" "list.html" "baseof.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/partials/" (23273 506 0 0) "toc.html" "social.html" "share.html" "header.html" "head.html" "footer.html" "author.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/shortcodes/" (23273 506 0 0) ".gitkeep" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/section/" (23273 506 0 0) "archives.html" "about.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/layouts/" (23273 506 0 0) "_default/" "shortcodes/" "section/" "partials/" "404.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/whiteplain/" (23273 506 0 0) "theme.toml" "static/" "README.md" "LICENSE" "layouts/" "images/" "exampleSite/" "archetypes/" ".git" ".circleci/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/layouts/_default/" (23273 719 0 0) "single.html" "li.html" "indexes.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/layouts/" (23273 719 0 0) "_default/" "shortcodes/" "rss.xml" "indexes/" "index.html" "chrome/" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/archetypes/" (23273 719 0 0) "default.md" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/simplea/" (23273 719 0 0) "theme.toml" "static/" "simple-a.png" "README.md" "LICENSE" "layouts/" "images/" "archetypes/" ".git" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/layouts/_default/" (23273 506 0 0) "single.html" "list.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/layouts/" (23273 506 0 0) "_default/" "partials/" "index.html" "404.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/elephants/" (23273 506 0 0) "theme.toml" "static/" "README.md" "LICENSE.md" "layouts/" "images/" "exampleSite/" "archetypes/" ".git" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/layouts/_default/" (23273 506 0 0) "terms.html" "single.html" "list.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/layouts/" (23273 506 0 0) "_default/" "partials/" "404.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/xmin/" (23273 506 0 0) "theme.toml" "static/" "README.md" "LICENSE.md" "layouts/" "images/" "hugo-xmin.Rproj" "exampleSite/" "archetypes/" ".gitignore" ".git" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/bare-min-theme/layouts/" (23273 506 0 0) "_default/" "shortcodes/" "partials/" "index.html" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/themes/bare-min-theme/" (23273 506 0 0) "theme.toml" "static/" "README.md" "netlify.toml" "LICENSE.md" "layouts/" "images/" "exampleSite/" "archetypes/" ".gitignore" ".git" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/hugotemplate/archetypes/" (23273 505 0 0) "default.md" "../" "./")
+
+ ("c:/Users/rmccarl/Dropbox/dev/" (23273 505 0 0) "Zoom.py" "yomichan.py" "workouts/" "wordbrewery-icons/" "wordbrewery-blog/" "wordbrewery/" "wbutils/" "wbtools/" "wbsentences/" "wblanghubs/" "wbhugo/" "wb-mobile-app/" "wb-app/" "wam/" "timemap/" "Supplementary Buttons Anki.py" "sublime-packages/" "sublime/" "sports_scraper/" "spanishdict 2016-06-22.py" "Sort_by_Card_Note_or_Deck.py" "Slideshow.py" "Search_Google_for_selected_text_in_Reviewer.py" "Search_cards_based_on_review_time.py" "scripts/" "scraping/" "ryanwebsite/" "ryanutils/" "ryanserver/" "ryanneo4jflask/" "ryandjango/" "ryanblog/" "rmlint/" "reporter/" "Remove_Duplicates.py" "Refocus_Card_when_Reviewing.py" "Quick_note_and_deck_buttons.py" "python/" "pysplitwise/" "pycharm_settings/" "PycharmProjects/" "Progress_Graph.py" "predictit/" "pdupe/" "noteutils/" "notetools/" "nltk_data/" "NLP/" "newsIonic-base/" "newblog/" "neo4j-flask/" "neo4j/" "Multi-column_note_editor.py" "More_Overview_Stats_2.py" "More_Overview_Stats.py" "mongo-sync/" "mint/" "MemriseCourseImporter.py" "mccarlblog.sublime-workspace" "Limit_searches_to_current_deck.py" "lektor/" "legal-tools/" "ledger-tools/" "lawgraph/" "lawdb-2017-12-16/" "language/" "kanjidata_2017.csv" "jquery/" "jpgraph/" "japanese/" "images/" "hugoThemes/" "hugotemplate/" "hugoDocs/" "hugo-tracks-theme/" "hugo-themes/" "hugo-material-docs/" "html/" "hinfo.py" "GoToSleep.scpt" "German/" "generic_py_init.py" "Full_Screen_F11.py" "front-end-dev-resources/" "fragmentsnew/" "fragments/" "fluentkanji/" "flask-template/" "flask/" "Editor_Autocomplete.py" "dt.py" "dotfiles-github/" "dotfiles/" "desktop.ini" "databases/" "data/" "CSS3/" "css/" "code/" "Card_Info_During_Review.py" "c/" "Bulk_Generate_Vocab_Frequency.py" "buku/" "bootstrap/" "bookmarks/" "blog_tools/" "blog/" "bin/" "becomingtechnical/" "base_py_template.py" "Azure and Office 365/" "AwesomeTTS.py" "autohotkey.ahk" "autohotkey/" "autocomplete/" "audio_tools/" "archive/" "anki_tools/" "angular/" "alfred/" "advanced_browser.py" ".vscode/" ".ssh/" ".metadata/" ".ledgerrc" ".idea/" ".gitconfig" ".git/" ".emacs.d/" ".dropbox" ".cjkdata/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

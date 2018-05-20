@@ -21,7 +21,7 @@
 (scroll-bar-mode -1)
 ;;(setq auto-save-default t)
 ;;(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
-;;(setq auto-save-folder "~/.emacs.d/auto-save-list/")
+;;(setq auto-save-folder "~/Dropbox/.emacs.d/auto-save-list/")
 ;;(setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq bind-key-describe-special-forms t)
 (setq blink-cursor-mode nil)
@@ -36,7 +36,7 @@
                     :family "Inconsolata"
                     :height 170
                     :weight 'normal
-                    :width 'normal)          
+                    :width 'normal)
 (when (functionp 'set-fontset-font)
   (set-fontset-font "fontset-default"
                     'unicode

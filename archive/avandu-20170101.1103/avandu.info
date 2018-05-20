@@ -1,0 +1,333 @@
+This is avandu.info, produced by makeinfo version 6.1 from
+avandu.texinfo.
+
+
+File: avandu.info,  Node: Top,  Next: Installation,  Prev: (dir),  Up: (dir)
+
+Avandu
+******
+
+Avandu is an emacs application that connects to a Tiny Tiny RSS
+(http://tt-rss.org) instance and allows you to read the articles it has
+gathered locally.
+
+   The name avandu was taken from a random web 2.0 business name
+generator, as I am very bad at thinking up names.  If you have a
+suggestion for a better one, please let me know.
+
+* Menu:
+
+* Installation::                Downloading and installing avandu
+* Configuration::               Setting it up to work
+* Usage::                       Reading some news
+
+
+File: avandu.info,  Node: Installation,  Next: Configuration,  Prev: Top,  Up: Top
+
+1 Installing Avandu
+*******************
+
+Installing avandu should be easiest when using package.el, the package
+manager for emacs 24.  Once this package is uploaded to Marmalade
+(http://marmalade-repo.org/) it should be as simple as calling
+
+     (package-install "avandu")
+
+but as long as that is not the case, of if you can't use it for some
+other reason, another way is to download it, either with git
+(http://git-scm.com/):
+
+     git clone git://ryuslash.org/emacs/avandu.git
+
+or a snapshot
+(http://code.ryuslash.org/cgit.cgi/emacs/avandu/snapshot/avandu-master.tar.gz),
+which should then be unpacked.
+
+   If you still have package.el available to you, you could use
+
+     (package-install-file "/location/of/avandu.el")
+
+to install it, or you could byte-compile it, place its location
+somewhere in your 'load-path' and either 'autoload' or 'require' it.
+
+     (add-to-list 'load-path "/path/to/avandu/")
+
+     ;; And then either:
+     (autoload 'avandu-overview "avandu" "Show an overview of articles." t)
+     ;; or:
+     (require 'avandu)
+
+
+File: avandu.info,  Node: Configuration,  Next: Usage,  Prev: Installation,  Up: Top
+
+2 Configuring Avandu
+********************
+
+Now that it is installed, it needs to be configured (*note
+Installation::), otherwise it won't work at all.
+
+   Avandu only has one option at this time.
+
+ -- User Option: avandu-tt-rss-api-url
+     This option should contain a string.  It tells avandu where to look
+     for the api to your Tiny Tiny RSS instance.  This needs to be the
+     complete url to the api, for example 'http://tt-rss.org/demo/api/'.
+     Before this option is set avandu won't be able to do anything.
+
+   Other than this, it is possible, but unnecessary to set the following
+variables.  These are unnecessary because Avandu also supports the use
+of *note Auth-source: (auth)Top, which supersedes these variables.  When
+using auth source be sure to use the 'avandu-tt-rss-api-url' as the
+'machine' value.
+
+ -- User Option: avandu-user
+     This option should contain a string.  It is the username that is
+     used to log in to your Tiny Tiny RSS instance.  If it is 'nil' it
+     will get asked for when avandu tries to connect, and once a
+     succesful connection has been made it will remember it until you
+     log out.
+
+ -- Variable: avandu-password
+     The password to use to log in to your Tiny Tiny RSS instance.  This
+     option shouldn't really be set, it is mostly used to remember the
+     password so that when a session ends, it can easily be restarted.
+
+     Setting this variable manually in your emacs init file will make it
+     easier for others to find, be careful if you do.
+
+
+File: avandu.info,  Node: Usage,  Prev: Configuration,  Up: Top
+
+3 Using Avandu
+**************
+
+Once it has been installed (*note Installation::) and configured (*note
+Configuration::) it is ready to be used.
+
+   Avandu currently offers two things one can do with the stored feeds
+on the server.  View an overview of all the articles and see how many
+unread articles there are.
+
+* Menu:
+
+* Article overview::            A list of all unread articles
+* Article view::                One or more articles in a buffer
+* Other commands::              Anything else
+
+
+File: avandu.info,  Node: Article overview,  Next: Article view,  Prev: Usage,  Up: Usage
+
+3.1 Viewing unread articles
+===========================
+
+The avandu overview lets you see a list of all the unread articles in
+Tiny Tiny RSS.
+
+ -- Command: avandu-overview
+     Show a list of all the unread articles that your Tiny Tiny RSS
+     instance has stored, grouped by feed.  Due to certain "limitations"
+     of Tiny Tiny RSS, this will only be at most 60 articles at once, or
+     less if the user/admin has changed this setting.
+
+     Grouping is done very naively in avandu, as long as articles come
+     from the same feed, they will be grouped together, if the articles
+     are not already sorted by feed when avandu downloads them many
+     headings might be created.
+
+   The overview can be used to view these articles.  Pressing 'r' on any
+article title will mark that article as read, pressing 'o' will try to
+open it in your browser (using 'browse-url') and mark it as read.  Using
+'c' on any feed heading will "catch up" this feed, meaning it will mark
+all the articles in this feed as read.
+
+   Anywhere in the buffer, pressing 'n' or 'p' will move the cursor to
+the next or previous article title respectively, and 'N' and 'P' will do
+the same, but move to feed headings.
+
+   Explanations of all the related commands:
+
+ -- Command: avandu-browse-article
+     Call 'browse-url' to try and open the URL at point in your
+     preferred browser.  This only works when the cursor is placed on an
+     article title.
+
+     In 'avandu-overview' this command gets bound to the 'o' key in the
+     article title's keymap, so pressing 'o' on any article title will
+     try and browse to it.
+
+ -- Command: avandu-mark-article-read &optional button
+     Ask Tiny Tiny RSS to mark the article associated with BUTTON as
+     read.  If BUTTON is omitted or 'nil' it will try to use whatever is
+     at 'point'.
+
+     In 'avandu-overview' this command gets bound to the 'r' key in the
+     article title's keymap.
+
+ -- Command: avandu-mark-article-unread &optional button
+     Ask Tiny Tiny RSS to mark the article associated with BUTTON as
+     unread.  If BUTTON is omitted or 'nil' it will try to use whatever
+     is at 'point'.
+
+     In 'avandu-overview' this command gets bound to the 'u' key in the
+     article title's keymap.
+
+ -- Command: avandu-next-article
+     Search through the buffer for the next article header and move
+     point to it.  This command wraps around the buffer, so when using
+     it at the end of the buffer it will return to the top.
+
+     In 'avandu-overview' this command gets bound to the 'n' key in the
+     major-mode's keymap, so pressing 'n' anywhere in the buffer will go
+     to the next article title.
+
+ -- Command: avandu-previous-article
+     Exactly like 'avandu-next-article' except it looks for the previous
+     article title.
+
+     In 'avandu-overview' this command gets bound to the 'p' key in the
+     major-mode's keymap.
+
+ -- Command: avandu-feed-catchup
+     Ask the Tiny Tiny RSS instance to catch this feed up, meaning it
+     will mark all the articles in it as read.  This command doesn't
+     check which articles are being shown, it only sends the request to
+     catch up and which feed to do that with, so if you leave your
+     buffer open for a while you might mark articles you wish to read as
+     read.  This only works when the cursor is placed on a feed title.
+
+     In 'avandu-overview' this command gets bound to the 'c' key in the
+     feed title's keymap, so pressing 'c' on any feed title will try and
+     catch up the feed.
+
+ -- Command: avandu-next-feed
+     Exactly like 'avandu-next-article' except it looks for the next
+     feed title.
+
+     In 'avandu-overview' this command gets bound to the 'N' key in the
+     major-mode's keymap.
+
+ -- Command: avandu-previous-feed
+     Exactly like 'avandu-next-article' except it looks for the previous
+     feed title.
+
+     In 'avandu-overview' this command gets bound to the 'P' key in the
+     major-mode's keymap.
+
+
+File: avandu.info,  Node: Article view,  Next: Other commands,  Prev: Article overview,  Up: Usage
+
+3.2 Viewing one or more articles
+================================
+
+The avandu article view lets you read one or more articles with all
+their content.
+
+ -- Command: avandu-view-article id
+     Shows one or more articles with their content, possibly with its
+     content rendered by an external application, emacs' w3m mode or
+     anything you can think of/write yourself.
+
+     Although there is no real obstacle to calling this command
+     yourself, you will need an article id number, these are collected
+     automatically when using *note Article overview::.
+
+   In order to have the articles rendered at all you would need to set
+'avandu-article-render-function'.
+
+ -- User Option: avandu-article-render-function
+     This setting should point to a function that takes two arguments,
+     the start and end of the region to render.
+
+   Two functions come with Avandu to enable rendering.
+
+ -- Function: avandu-view-possibly-external start end
+     Call a shell command on the region between START and END.  Which
+     shell command should be called should be specified in
+     'avandu-html2text-command'.
+
+ -- User Option: avandu-html2text-command
+     A string with a shell command.  This command will be called by
+     'avandu-view-possibly-external' to render the region given to it.
+     One example could be:
+
+          w3m -dump -T text/HTML -cols 72
+
+ -- Function: avandu-view-w3m
+     This function requires the 'w3m' module for emacs.  It sends the
+     region on to 'w3m-region' and then start 'w3m-minor-mode' to give
+     it the usual w3m viewing commands.
+
+
+File: avandu.info,  Node: Other commands,  Prev: Article view,  Up: Usage
+
+3.3 All the others
+==================
+
+Apart from viewing unread articles there are a number of other things
+that can be done.
+
+ -- Command: avandu-new-articles-count
+     Ask Tiny Tiny RSS for the total number of unread articles.  If this
+     function is called interactively in any way it shows a message en
+     the echo area like:
+
+          There are # unread articles
+
+     and it returns the number of unread articles as a string.
+
+ -- Command: avandu-logged-in-p
+     Asks Tiny Tiny RSS if the user with the currently known session id
+     is still logged in.
+
+ -- Command: avandu-login
+     Log in to the Tiny Tiny RSS instance specified by the user (with
+     'avandu-tt-rss-api-url', *note Configuration::), ask for the user's
+     username and password if they're not already known and remember the
+     session variable that was returned by the api.
+
+ -- Command: avandu-logout
+     Log out of the Tiny Tiny RSS instance, reset the session id,
+     username and password used by avandu.
+
+ -- Command: avandu-tt-rss-api-level
+     Request the api level of the Tiny Tiny RSS instance.  If called
+     interactively in any way it will print a message like:
+
+          API Level: #
+
+     and it returns the api level as an integer.
+
+     This does not currently serve any purpose, but it might be used in
+     the future to determine which functions are available.
+
+ -- Command: avandu-tt-rss-version
+     Get the version of the Tiny Tiny RSS instance.  If called
+     interactively in any way it will print a message like:
+
+          Tiny Tiny RSS Version: #
+
+     and it returns the version as a string.
+
+ -- Command: avandu-subscribe-to-feed feed category
+     Ask Tiny Tiny RSS to subscribe to FEED and put it in the category
+     CATEGORY.  FEED should be a URL and CATEGORY the id of the category
+     as known in Tiny Tiny RSS.
+
+     When used interactively the user will be prompted for both, and
+     completions will be offered for CATEGORY to make things easier.
+
+ -- Command: avandu-unsubscribe-from-feed id
+     Ask Tiny Tiny RSS to unsubscribe from the feed identified with ID.
+     Completion is provided to make selection easier.
+
+
+Tag Table:
+Node: Top76
+Node: Installation686
+Node: Configuration1819
+Node: Usage3426
+Node: Article overview3990
+Node: Article view8034
+Node: Other commands9713
+
+End Tag Table
